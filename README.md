@@ -1,4 +1,4 @@
-## Hi there 👋
+## Desafie o padrão: Menos consumo, mais inovação!
 
 <!--
 **Susten-Tech/Susten-Tech** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
