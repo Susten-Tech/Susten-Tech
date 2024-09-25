@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-body {
+    font-family: "Inter", sans-serif; /* Adicione um fallback */
+    font-size: 15px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    background-color: #f4f4f4; /* Cor de fundo, se necessário */
+}
+
+.navbar {
+    background-color: #0D7E2E; 
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-palavras {
+    font-family: "Inter";
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links li a {
+    color: #fff; /* Palavras */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #ddd;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #28a745;
+    padding: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 1;
+    list-style: none;
+}
+
+.dropdown-content li {
+    padding: 8px 0;
+}
+
+.dropdown-content li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-content li a:hover {
+    color: #ddd;
+}
+
+.nav-links li a {
+    color: white; 
+    padding: 15px 20px;
+    white-space: nowrap;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.nav-links li a:hover {
+    background-color: #7ed957; 
+    border-radius: 1px; 
+    transform: scale(1.05); 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Alternativa para clique */
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pesquisa input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.pesquisa button {
+    color: none;
+    border: none;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pesquisa button:hover {
+    background-color: #777;
+}
+
+.perfil-icon a {
+    color: #fff; 
+    font-size: 24px;
+}
+
+.perfil-icon a:hover {
+    color: #ddd;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar-container {
+        justify-content: space-between;
+    }
+
+    .search-container {
+        flex-grow: 1;
+        margin-left: 20px;
+    }
+}
+
+/**/
+

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós</title>
+
+  <link rel="stylesheet" href="../NavBar/navbar.css">
+  <link rel="stylesheet" href="../Rodapé/Rodapé.css">
+  <link rel="icon" type="image/png" href="../../img/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS, Popper.js, and necessary dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<style>
+  body{
+    background-color: #F1FAF1;
+    font-family: "DM Sans", sans-serif;
+  }
+</style>
+  <style>
+  /* Carousel  */
+    #carouselExampleCaptions {
+      max-width: 100%;
+      max-height: 300px;
+    }
+
+    .carousel-item img {
+      height: 300px;
+      object-fit: cover; 
+    }
+
+   
+    .carousel-caption h1 {
+      color: #2f5c2c; 
+      font-size: 50px ;
+    }
+    .carousel-caption h3 {
+      color: #0d7e2e; 
+      font-size: 18px ;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(100%); 
+    }
+
+    .carousel-indicators [data-bs-target] {
+      background-color: #0d7e2e; 
+      border-radius: 60%;
+    }
+    .carousel-indicators .active {
+      background-color: #fff; 
+    }
+  </style>
+  <style>
+ /*  Colunas para Missão, Visão e Valores */
+    .missão, .visão, .valores {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+      text-align: center;
+      padding: 25px;
+      margin: 25px;
+      background-color: #eae7e7;
+      border-radius: 15px;
+    }
+
+    
+    .visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    
+    .container {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px;
+    }
+
+    .container img {
+      width: 150px; 
+    }
+
+    .container h2 {
+      color: #2e7d32;
+      font-size: 24px;
+
+    }
+
+    .container p {
+      font-size: 16px;
+      color: #0d7e2e;
+    }
+  </style>
+   
+   <!-- Membros da equipe -->
+   <style>
+    body {
+      background-color: #f0f0f0;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #0d7e2e; 
+    }
+    /* Estilos atualizados para os membros da equipe */
+.team-container {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+}
+
+.team-member {
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  width: 200px; 
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.team-member img {
+  width: 180px; 
+  height: 180px;
+  object-fit: cover; 
+  border-radius: 50%; 
+}
+
+.team-member h3 {
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+  color: #0d7e2e;
+}
+
+.team-member p {
+  color: #0d7e2e;
+  font-size: 14px;
+}
+
+  </style>
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="nav-tamanho">
+        <div navbar-sustentech>
+          <a href="#"><img class="image" src="../NavBar/imagens/sustentech_logo.png" alt="sustentech logo"></a>
+        </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../Pagina Inicial/pagina_inicial.html">Início</a></li>
+            <li><a href="../Produtos/produtos.html">Produtos</a></li>
+            <li class="dropdown">
+                <a href="../Cadastro de users/usuarios.html">Cadastro</a>
+                <ul class="dropdown-content">
+                    <li><a href="../Cadastro de users/usuarios.html">Usuários</a></li>
+                    <li><a href="../Cadastro de users/usuarios_empresas.html">Empresas</a></li>
+                    <li><a href="../Cadastro Produtos/cadastro_produtos.html">Produtos</a></li>
+                    </ul>
+            <li><a href="../Sobre Nos/sobre_nos.html">Sobre Nós</a></li>
+            <li><a href="../Locais de Descarte/locais_descarte.html">Locais de Reciclagem</a></li>
+            <li><a href="../Fale Conosco/fale_conosco.html">Fale Conosco</a></li>
+            <li><a href="../Sugestoes/sugestoes.html">Sugestões</a></li>
+              </ul>
+          </li>
+      </ul>
+      <div class="pesquisa">
+          <input type="text" placeholder="Clique aqui para pesquisar...">
+          <button><i class="fas fa-search"></i>
+            <a href="#"><img class="image" src="../NavBar/imagens/lupa.png" alt="icone lupa"></a>
+          </button>
+      </div>
+      <div class="perfil-icon">
+        <a href="#"><img class="image" src="../NavBar/imagens/icone_perfil.png" alt="icone perfil"></a>
+        <i class="user"></i></a>
+      </div>
+  </div>
+  </nav>
+  <!-- Seção do carousel -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="slide 1.png" class="d-block w-100" alt="slide 1">
+      <div class="carousel-caption d-none d-md-block">
+     <h3>"Desafie o padrão: menos consumo, mais inovação."</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src=" slide 2.png" class="d-block w-100" alt="slide 2">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Origem do nome</h1>
+        <p></p>
+        <h3>O projeto "Sustentech Lovelace" une sustentabilidade, responsabilidade e tecnologia avançada, 
+        <p></p> inspirando-se em Ada Lovelace. 
+       </h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="slide 2.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>História do Projeto</h1>
+        <h3>A plataforma foi desenvolvida com o objetivo de promover a reinserção de dispositivos eletrônicos no ciclo da economia circular,
+          visando reduzir os impactos ambientais. </h3>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<p></p>
+<h1 style="text-align: center;">Equipe Sustentech:</h1>
+
+<!-- Seção da equipe -->
+<div class="team-container">
+ 
+  <div class="team-member">
+    <img src="ana.jpeg" alt="Integrante 1">
+    <h3>Ana Clara</h3>
+    <p>Cabral</p>
+  </div>
+
+  
+  <div class="team-member">
+    <img src="andrey.jpeg" alt="Integrante 2">
+    <h3>Andrey</h3>
+    <p>Oliveira</p>
+  </div>
+
+ 
+  <div class="team-member">
+    <img src="camili.jpeg" alt="Integrante 3">
+    <h3>Camili</h3>
+    <p>Costa</p>
+  </div>
+
+  <div class="team-member">
+    <img src="esther.jpeg" alt="Integrante 5">
+    <h3>Esther </h3>
+    <p>Silva</p>
+  </div>
+
+
+
+  <div class="team-member">
+    <img src="isabela.jpeg" alt="Integrante 4">
+    <h3>Isabella</h3>
+    <p>Góes</p>
+  </div>
+</div>
+<!-- Seções Missão, Visão e Valores -->
+<div class="container">
+  <div class="missão">
+    <img src="missao_icon.png" alt="Missão Icon">
+    <h2>Missão</h2>
+    <p>Mitigar os problemas causados pelo consumo e descarte desenfreado de aparelhos tecnológicos.</p>
+  </div>
+  <div class="visão">
+    <img src="visao_icon.png" alt="Visão Icon">
+    <h2>Visão</h2>
+    <p>Estabelecer-se como uma plataforma reconhecida pelo seu compromisso com a sustentabilidade e a responsabilidade ambiental.</p>
+  </div>
+  <div class="valores">
+    <img src="valores_icon.png" alt="Valores Icon">
+    <h2>Valores</h2>
+    <p>Inovação, Utilizar menos e produzir mais, Sustentabilidade Ambiental, Transparência e Confiança.</p>
+  </div>
+</div>
+
+<script>
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
+  const sections = document.querySelectorAll('.missão, .visão, .valores');
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
+<footer>
+  <div class="container ">
+      <div class="row">
+        <div class="col text-center">
+          <img class="image1" src="../../img/logo.png" alt="">
+          <p class="emo">Desafie o padrão: menos consumo, mais inovação.</p>
+        </div>
+        <div class="col">
+          <nav class="">
+            <h5 class="text-color">Contato</h5>
+            <div class="link-chato">
+              <a class="nav-link">(13) 91234-5678</a>
+              <a class="nav-link">sustentech.contato@gmail.com</a>
+              <a class="nav-link" href="../Fale Conosco/fale_conosco.html">Fale Conosco</a>
+            </div>
+           
+          </nav>
+        </div>
+        <div class="col">
+          <nav>
+            <h5 class="text-color">Redes Sociais</h5>
+            <div class="link-chato2">
+            <a class="nav-link" href="https://www.instagram.com/sustentech_lvlc?igsh=MWhhZXdwNHg0NXU3eA=="><img class="png" src="../Rodapé/img/instagram.png" alt=""> Instagram</a>
+            <a class="nav-link" href=""><img class="png" src="../Rodapé/img/facebook.png" alt=""> Facebook</a>
+            <a class="nav-link" href=""><img class="png" src="../Rodapé/img/tiktok.png" alt=""> Tiktok</a>
+            <a class="nav-link" href=""><img class="png" src="../Rodapé/img/discordia.png" alt=""> Discord</a>
+            <a class="nav-link" href="https://github.com/Susten-Tech/Sustentech"><img class="png" src="../Rodapé/img/github.png" alt=""> Github</a>
+            </div>
+          </style>
+        </div>
+        <div class="col text-center">
+          <nav>
+            <h5 class="text-color">Navegação</h5>
+            <a class="nav-link" href="../Pagina Inicial/pagina_inicial.html">Página inicial</a>
+            <a class="nav-link" href="../Produtos/produtos.html">Produtos</a>
+            <a class="nav-link" href="../Cadastro de users/usuarios.html">Cadastro</a>
+            <a class="nav-link" href="../Sobre Nos/sobre_nos.html">Sobre Nós</a>
+            <a class="nav-link" href="../Sugestoes/sugestoes.html">Sugestões</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

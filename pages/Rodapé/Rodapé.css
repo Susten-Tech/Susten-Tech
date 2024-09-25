@@ -1,0 +1,75 @@
+footer {
+    background-color: #DBFEDD;
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+}
+
+h5 {
+    text-align: center;
+}
+
+.container {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.nav-link {
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.png {
+    width: 20px !important;
+}
+
+.text-color {
+    color: #0D7E2E;
+}
+
+.link-chato {
+    padding-left: 100px;
+}
+
+.link-chato2 {
+    padding-left: 95px;
+}
+
+.link-chato2 > a {
+    margin-bottom: 7px;
+}
+
+.emo {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(190, 190, 190);
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    border-radius: 25px 25px 0px 0px;
+    border: 5px solid #0D7E2E;
+    border-right:0 ;
+    border-left: 0;
+}
+
+.map-responsive iframe{
+    margin-top: 2%;
+    margin-left: 10%;
+    height:80%;
+    width:80%;
+    position: absolute;
+}
+
+.header {
+    margin-top: 50px;
+    text-align: center;
+
+}

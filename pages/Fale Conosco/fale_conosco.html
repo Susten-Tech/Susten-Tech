@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+
+    <link rel="stylesheet" href="../NavBar/navbar.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../Rodapé/Rodapé.css">
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <div class="nav-tamanho">
+            <div navbar-sustentech>
+              <a href="#"><img class="image" src="../NavBar/imagens/sustentech_logo.png" alt="sustentech logo"></a>
+            </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../Pagina Inicial/pagina_inicial.html">Início</a></li>
+                <li><a href="../Produtos/produtos.html">Produtos</a></li>
+                <li class="dropdown">
+                    <a href="../Cadastro de users/usuarios.html">Cadastro</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../Cadastro de users/usuarios.html">Usuários</a></li>
+                        <li><a href="../Cadastro de users/usuarios_empresas.html">Empresas</a></li>
+                        <li><a href="../Cadastro Produtos/cadastro_produtos.html">Produtos</a></li>
+                        </ul>
+                <li><a href="../Sobre Nos/sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="../Locais de Descarte/locais_descarte.html">Locais de Reciclagem</a></li>
+                <li><a href="../Fale Conosco/fale_conosco.html">Fale Conosco</a></li>
+                <li><a href="../Sugestoes/sugestoes.html">Sugestões</a></li>
+                  </ul>
+              </li>
+          </ul>
+          <div class="pesquisa">
+              <input type="text" placeholder="Clique aqui para pesquisar...">
+              <button><i class="fas fa-search"></i>
+                <a href="#"><img class="image" src="../NavBar/imagens/lupa.png" alt="icone lupa"></a>
+              </button>
+          </div>
+          <div class="perfil-icon">
+            <a href="#"><img class="image" src="../NavBar/imagens/icone_perfil.png" alt="icone perfil"></a>
+            <i class="user"></i></a>
+          </div>
+      </div>
+  </nav>
+  <main>
+    <div class="container">
+        <h1>FALE CONOSCO</h1>
+        <p>Preencha o formulário abaixo:</p>
+        <form action="process_form.php" method="POST">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" autocomplete="new-password" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva aqui os motivos pelos quais você chegou a esse canal..." required></textarea>
+
+            <button type="submit" aria-label="Enviar formulário de contato">Enviar</button>
+        </form>
+    </div>
+  </main>
+
+    <footer>
+      <div class="container ">
+          <div class="row">
+            <div class="col text-center">
+              <img class="image1" src="../../img/logo.png" alt="">
+              <p class="emo">Desafie o padrão: menos consumo, mais inovação.</p>
+            </div>
+            <div class="col">
+              <nav class="">
+                <h5 class="text-color">Contato</h5>
+                <div class="link-chato">
+                  <a class="nav-link">(13) 91234-5678</a>
+                  <a class="nav-link">sustentech.contato@gmail.com</a>
+                  <a class="nav-link" href="../Fale Conosco/fale_conosco.html">Fale Conosco</a>
+                </div>
+               
+              </nav>
+            </div>
+            <div class="col">
+              <nav>
+                <h5 class="text-color">Redes Sociais</h5>
+                <div class="link-chato2">
+                <a class="nav-link" href="https://www.instagram.com/sustentech_lvlc?igsh=MWhhZXdwNHg0NXU3eA=="><img class="png" src="../Rodapé/img/instagram.png" alt=""> Instagram</a>
+                <a class="nav-link" href=""><img class="png" src="../Rodapé/img/facebook.png" alt=""> Facebook</a>
+                <a class="nav-link" href=""><img class="png" src="../Rodapé/img/tiktok.png" alt=""> Tiktok</a>
+                <a class="nav-link" href=""><img class="png" src="../Rodapé/img/discordia.png" alt=""> Discord</a>
+                <a class="nav-link" href="https://github.com/Susten-Tech/Sustentech"><img class="png" src="../Rodapé/img/github.png" alt=""> Github</a>
+                </div>
+              </style>
+            </div>
+            <div class="col text-center">
+              <nav>
+                <h5 class="text-color">Navegação</h5>
+                <a class="nav-link" href="../Pagina Inicial/pagina_inicial.html">Página inicial</a>
+                <a class="nav-link" href="../Produtos/produtos.html">Produtos</a>
+                <a class="nav-link" href="../Cadastro de users/usuarios.html">Cadastro</a>
+                <a class="nav-link" href="../Sobre Nos/sobre_nos.html">Sobre Nós</a>
+                <a class="nav-link" href="../Sugestoes/sugestoes.html">Sugestões</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

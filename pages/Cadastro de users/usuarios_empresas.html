@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Empresas</title>
+
+    <link rel="stylesheet" href="../NavBar/navbar.css">
+    <link rel="stylesheet" href="../Rodapé/Rodapé.css">
+
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    
+<style>
+body{
+    background-color: #F1FAF1;
+}
+.login
+{
+    font-family: "DM Sans", sans-serif;
+    width: 500px;
+    height: 950px;
+    background-color: #e1ffe1 ;
+    margin-top: 70px;
+    border-radius: 5%;
+    text-align: center;
+    margin-left: 33%;
+}
+.body{
+    background-color: #e1ffe1;
+}
+input{
+    padding: 5px;
+    font-size: 10px;
+    width: 60%;
+    margin-bottom: 8px;
+    outline: none;
+}
+label{
+    font-family: "DM Sans", sans-serif;
+    padding: 10px;
+    width: 30%;
+    font-size: 20px;
+}
+
+.botao{
+    font-family: "DM Sans", sans-serif;
+    margin-top: 20px;
+    width: 70%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 6%;
+    background-color: #0D7E2E;
+    color: white;
+
+}
+.botao:hover{
+    background-color: #2f5c2c;
+}
+h2{
+    font-family: "DM Sans", sans-serif;
+    padding: 8px;
+    font-size: 40px;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <div class="nav-tamanho">
+            <div navbar-sustentech>
+              <a href="#"><img class="image" src="../NavBar/imagens/sustentech_logo.png" alt="sustentech logo"></a>
+            </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../Pagina Inicial/pagina_inicial.html">Início</a></li>
+                <li><a href="../Produtos/produtos.html">Produtos</a></li>
+                <li class="dropdown">
+                    <a href="../Cadastro de users/usuarios.html">Cadastro</a>
+                    <ul class="dropdown-content">
+                        <li><a href="usuarios.html">Usuários</a></li>
+                        <li><a href="../Cadastro de users/usuarios_empresas.html">Empresas</a></li>
+                        <li><a href="../Cadastro Produtos/cadastro_produtos.html">Produtos</a></li>
+                        </ul>
+                <li><a href="../Sobre Nos/sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="../Locais de Descarte/locais_descarte.html">Locais de Reciclagem</a></li>
+                <li><a href="../Fale Conosco/fale_conosco.html">Fale Conosco</a></li>
+                <li><a href="../Sugestoes/sugestoes.html">Sugestões</a></li>
+                  </ul>
+              </li>
+          </ul>
+          <div class="pesquisa">
+              <input type="text" placeholder="Clique aqui para pesquisar...">
+              <button><i class="fas fa-search"></i>
+                <a href="#"><img class="image" src="../NavBar/imagens/lupa.png" alt="icone lupa"></a>
+              </button>
+          </div>
+          <div class="perfil-icon">
+            <a href="#"><img class="image" src="../NavBar/imagens/icone_perfil.png" alt="icone perfil"></a>
+            <i class="user"></i></a>
+          </div>
+      </div>
+  </nav>
+    <div class="login">
+        <h2>Cadastro de Empresa:</h2>
+        <form method="POST" action="../Perfil/perfil_empresa.html">
+        <label for="usuario">Usuário:</label><br>
+        <input type="text" id="nm_empresa" name="nm_empresa" required><br>
+    
+        <label for="usuario">CNPJ:</label><br>
+        <input type="text" id="cnpj_empresa" name="cnpj_empresa" required><br>
+    
+        <label for="usuario">Endereço:</label><br>
+        <input type="text" id="nm_endereco" name="nm_endereco" required><br>
+    
+        <label for="usuario">Número:</label><br>
+        <input type="text" id="nr_endereco" name="nr_endereco" required><br>
+    
+        <label for="usuario">CEP:</label><br>
+        <input type="text" id="nr_cep" name="nr_cep" required><br>
+        
+        <label for="usuario">Nome do Responsável:</label><br>
+        <input type="text" id="nm_responsavel" name="nm_responsavel" required><br>
+    
+        <label for="usuario">Cargo do Responsável:</label><br>
+        <input type="text" id="cargo_responsavel" name="cargo_responsavel" required><br>
+    
+        <label for="usuario">Email do Responsável:</label><br>
+        <input type="text" id="email_responsavel" name="email_responsavel" required><br>
+    
+        <label for="usuario">Telefone:</label><br>
+        <input type="text" id="usuario" name="nr_telefone" required><br>
+    
+        <label for="usuario">Descrição dos Serviços Prestados:</label><br>
+        <input type="text" id="ds_servico" name="ds_servio" required><br>
+    
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="usuario" name="senha" required><br>
+        
+        <label for="ConfirmarSenha"> Confirme a senha:</label><br>
+        <input type="password" id="ConfirmaSenha" name="ConfirmaSenha" required><br>
+    <br>
+    <h1><input class="botao" type="submit"  href="perfil.html" value="Cadastrar"></h1>
+    </form>
+    </div>
+</body>
+</html>
