@@ -1,5 +1,4 @@
 .page-container {
-    
     padding: 20px; 
     max-width: 1200px; 
     margin: 0 auto; 
@@ -13,53 +12,43 @@
 }
 
 .containerD .cardD {
-    position: relative;
     border-radius: 20px;
-    height: 150px; 
+    height: 200px; /* Ajusta a altura total */
     width: 250px; 
     background-color: #0d7e2e;
     overflow: hidden;
     transition: .3s all ease;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
     align-items: center;
-    flex-grow: 0; 
+    text-align: center;
 }
 
 .containerD .cardD img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%; /* Reduz o tamanho máximo da imagem */
+    max-height: 60%; /* Define a altura máxima da imagem */
     object-fit: cover;
     transition: .3s ease;
 }
 
-.containerD .cardD .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0; 
-    visibility: hidden;
-    pointer-events: none; 
-    transition: opacity .3s ease, visibility .3s ease; 
-    color: white;
+.containerD .cardD .textD {
+    color: white; /* Torna o texto branco */
     font-size: 16px; 
     font-weight: bold;
-    text-align: center;
-    z-index: 10; 
+    margin-top: 10px; /* Espaçamento entre a imagem e o texto */
 }
 
 .containerD .cardD:hover {
     width: 300px; 
-    height: 150px; 
+    height: 220px; 
 }
 
 .containerD .cardD:hover img {
-    opacity: 0.3;
+    opacity: 0.7; /* Mantém a imagem visível, mas um pouco mais clara ao passar o mouse */
 }
 
-.containerD .cardD:hover .text {
+.containerD .cardD:hover .textD {
     opacity: 1; 
     visibility: visible;
-    pointer-events: auto; 
 }
