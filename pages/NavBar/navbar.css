@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 * {
     margin: 0;
@@ -6,54 +6,54 @@
     box-sizing: border-box;
 }
 
-.nav-body {
-    font-family: "Inter", sans-serif; /* Adicione um fallback */
-    font-size: 15px; /* Tamanho da fonte */
-    font-weight: bold; /* Peso da fonte */
-    background-color: #f4f4f4; /* Cor de fundo, se necessário */
-}
-
 .navbar {
+    font-family: "DM Sans", sans-serif;
     background-color: #0D7E2E; 
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 20px; 
     display: flex;
-    justify-content: center;
-    font-family: "Inter";
-    font-size: 15px;
-    font-weight: bold;
+    align-items: center; /* Alinha os itens verticalmente */
+    width: 100%; 
+    position: relative; 
+    z-index: 1000; 
 }
 
 .navbar-container {
-    width: 100%;
-    max-width: 1200px;
+    width: 100%; 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; 
 }
 
-.nav-palavras {
-    font-family: "Inter";
-    color: #fff;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
+.nav-logo {
+    margin-left: 60px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 5px; 
+    flex-grow: 1;
+    margin-top: 15px;
+}
+
+.nav-links li {
+    display: flex; 
+    align-items: center; 
 }
 
 .nav-links li a {
-    color: #fff; /* Palavras */
+    color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px; 
+    padding: 10px 15px; 
+    white-space: nowrap; 
 }
 
 .nav-links li a:hover {
     color: #ddd;
+    background-color: #7ed957; 
+    border-radius: 4px; 
 }
 
 .dropdown {
@@ -69,94 +69,50 @@
     border-radius: 4px;
     z-index: 1;
     list-style: none;
-}
+    margin-top: 180px;
 
-.dropdown-content li {
-    padding: 8px 0;
-}
-
-.dropdown-content li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.dropdown-content li a:hover {
-    color: #ddd;
-}
-
-.nav-links li a {
-    color: white; 
-    padding: 15px 20px;
-    white-space: nowrap;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease; 
-}
-
-.nav-links li a:hover {
-    background-color: #7ed957; 
-    border-radius: 1px; 
-    transform: scale(1.05); 
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Alternativa para clique */
-.dropdown:focus-within .dropdown-content {
-    display: block;
-}
 
-.pesquisa {
+/* Pesquisa */
+.pesquisaN {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px; 
+    margin-left: 20px;
 }
 
-.pesquisa input {
+.N input {
     padding: 5px 10px;
     border: none;
     border-radius: 4px;
     font-size: 14px;
 }
 
-.pesquisa button {
-    color: none;
+.pesquisaN button {
+    background-color: transparent; 
     border: none;
-    padding: 6px;
-    border-radius: 4px;
     cursor: pointer;
 }
 
-.pesquisa button:hover {
-    background-color: #777;
+.perfil-iconN {
+    margin-left: 25px; /* Aumentado para mais espaço antes do ícone de perfil */
+    margin-right: 60px;
 }
 
-.perfil-icon a {
+.perfil-iconN a {
     color: #fff; 
     font-size: 24px;
-}
-
-.perfil-icon a:hover {
-    color: #ddd;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
-    }
-
-    .navbar-container {
-        justify-content: space-between;
-    }
-
-    .search-container {
-        flex-grow: 1;
-        margin-left: 20px;
+        flex-direction: column; 
+        display: none; 
     }
 }
-
-/**/
-
