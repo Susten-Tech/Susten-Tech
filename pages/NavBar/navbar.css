@@ -26,7 +26,7 @@
 }
 
 .nav-logo {
-    margin-left: 60px;
+    margin-left: 300px;
 }
 
 .nav-links {
@@ -35,6 +35,7 @@
     gap: 5px; 
     flex-grow: 1;
     margin-top: 15px;
+    margin-left: 150px;
 }
 
 .nav-links li {
@@ -100,8 +101,8 @@
 }
 
 .perfil-iconN {
-    margin-left: 25px; /* Aumentado para mais espaço antes do ícone de perfil */
-    margin-right: 60px;
+    margin-left: 25px; 
+    margin-right: 300px;
 }
 
 .perfil-iconN a {
