@@ -10,7 +10,7 @@
 
 ###
 
-<h3 align="left">♻️ Nosso projeto</h3>
+<h2 align="left">♻️ Nosso projeto</h2>
 
 ###
 
@@ -18,7 +18,7 @@
 
 ###
 
-<h3 align="left">💻 Ferramentas</h3>
+<h2 align="left">💻 Ferramentas</h2>
 
 ###
 
