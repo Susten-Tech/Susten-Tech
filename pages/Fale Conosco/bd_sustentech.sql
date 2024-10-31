@@ -1,4 +1,4 @@
-use bd_sustentech;
+CREATE bd_sustentech;
 
 
 use bd_sustentech;
@@ -11,7 +11,5 @@ usuario varchar(45) null,
 email varchar(45) null, 
 senha varchar(45) null, 
 mensagem longtext null);
-
-
 
 

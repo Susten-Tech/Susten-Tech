@@ -3,8 +3,6 @@
 include 'conexão.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Supondo que você já tenha uma conexão com o banco de dados
-    // Exemplo: $conexao = new mysqli('localhost', 'usuario', 'senha', 'banco');
 
     $nome = htmlspecialchars($_POST['nome']);
     $telefone = htmlspecialchars($_POST['telefone']);
@@ -20,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo "<p><strong>Email:</strong> $email</p>";
     echo "<p><strong>Mensagem:</strong> $mensagem</p>";
 
-    // Prepare sua consulta SQL
+    
     $stmt = $conexao->prepare("INSERT INTO tb_faleconosco (nome, telefone, usuario, email, senha, mensagem) VALUES (?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssss", $nome, $telefone, $usuario, $email, $senha, $mensagem);
 
@@ -30,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Erro ao inserir dados: " . $conexao->error;
     }
 
-    $stmt->close(); // Fechar a declaração
+    $stmt->close(); 
 } else {
     echo "Método inválido. Use POST";
 }

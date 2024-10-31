@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="suggestion-container"> 
+        <h1>SUGESTÕES</h1>
+        <div class="suggestion-image-section"> 
+            <img src="icone de sinalização.png" alt="icone de sinalização" class="suggestion-icon"> 
+            <div class="function-description">
+                <h2>Função</h2>
+                <p>Uma guia de sugestões em um site serve para ajudar os usuários a encontrar conteúdo relevante ou interessante com base em suas preferências ou comportamento de navegação. Ela pode fornecer recomendações personalizadas de produtos, artigos, vídeos ou outros itens, facilitando a navegação e melhorando a experiência do usuário ao sugerir opções que possam atender às suas necessidades ou despertar seu interesse.</p>
+            </div>
+        </div>
+
+        <form action="processar.php" method="POST" class="suggestion-form">
+            <h3>Escreva aqui a sua sugestão para a otimização da nossa plataforma:</h3>
+
+            <label for="avaliacao">Qual a sua avaliação até o momento?</label>
+            <input type="text" id="avaliacao" name="avaliacao" required>
+
+            <label for="funcionalidades">O que acha das funcionalidades?</label>
+            <input type="text" id="funcionalidades" name="funcionalidades" required>
+
+            <div class="suggestion-feedback-section"> 
+                <div class="negative">
+                    <label for="negativo">Negativo:</label>
+                    <input type="text" id="negativo" name="negativo">
+                </div>
+                <div class="positive">
+                    <label for="positivo">Positivo:</label>
+                    <input type="text" id="positivo" name="positivo">
+                </div>
+            </div>
+
+            <label for="sugestao">Insira a sua sugestão:</label>
+            <textarea id="sugestao" name="sugestao" rows="4" required></textarea>
+
+            <button type="submit">Enviar Sugestão</button>
+        </form>
+    </div>
+</body>
+</html>

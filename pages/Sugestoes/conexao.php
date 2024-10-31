@@ -3,7 +3,7 @@
 $hostname = "localhost";
 $username = "root";
 $password = '';
-$database = "bd_sustentech";
+$database = "bd_sugestoes";
  
 $conexao = new mysqli($hostname, $username, $password, $database);
 

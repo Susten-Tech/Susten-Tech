@@ -6,17 +6,18 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #e0fce0;
     color: #333;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.container {
+.suggestion-container { 
     width: 60%;
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -27,13 +28,13 @@ h1 {
     margin-bottom: 20px;
 }
 
-.image-section {
+.suggestion-image-section { 
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.icon {
+.suggestion-icon { 
     width: 190px;
     margin-left: 20px;
 }
@@ -42,12 +43,11 @@ h1 {
     color: green;
     margin-bottom: 10px;
     padding-left: 40%;
-
 }
 
 p {
     padding-left: 60px;
-    font-size: 90%;
+    font-size: 85%;
 }
 
 .suggestion-form {
@@ -60,7 +60,7 @@ p {
 }
 
 .suggestion-form label {
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: bold;
 }
 
@@ -73,7 +73,7 @@ p {
     width: 100%;
 }
 
-.feedback-section {
+.suggestion-feedback-section { 
     display: flex;
     justify-content: space-between;
 }
@@ -84,13 +84,13 @@ p {
 }
 
 button {
-    margin-top: 5px;
     padding: 10px;
     background-color: green;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 10px 90px;
     font-size: 16px;
 }
 
