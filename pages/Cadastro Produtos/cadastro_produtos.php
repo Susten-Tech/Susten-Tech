@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 }
 
 // Verifique se o método de requisição é POST
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Obtenha os dados do formulário e escape os valores para evitar SQL Injection
     $nm_produto = $conn->real_escape_string($_POST["nm_produto"]);
     $nm_marca = $conn->real_escape_string($_POST["nm_marca"]);
@@ -36,11 +36,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     if ($query) {
         echo "Inserido com sucesso";
-        header("Location: ../Produtos/produtos.php");
-        exit(); // É importante usar exit após o header para evitar que o script continue executando
     } else {
         echo "Erro ao inserir: " . mysqli_error($conn);
-    }    
+    }
+}
 
 $conn->close();
 ?>
