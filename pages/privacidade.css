@@ -1,0 +1,44 @@
+#priv-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.priv-titulo {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px; 
+}
+
+.priv-subtitulo {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    color: #333;
+    margin-top: 25px; 
+    margin-bottom: 10px; 
+}
+
+.priv-texto {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+.priv-lista {
+    font-family: Arial, sans-serif;
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.priv-destaque {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px; 
+}
