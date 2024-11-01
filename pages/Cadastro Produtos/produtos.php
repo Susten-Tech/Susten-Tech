@@ -6,8 +6,7 @@
     <title>Produtos</title>
  
     <link rel="stylesheet" href="../NavBar/navbar.css">
-    <link rel="stylesheet" href="../Rodapé/Rodapé.css">
- 
+    
     <link rel="icon" type="image/png" href="../../img/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 </head>

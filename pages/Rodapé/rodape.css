@@ -4,7 +4,7 @@
     background-color: #c2f7c2; 
     padding: 10px 20px 40px; 
     font-family: 'DM Sans', sans-serif;
-    margin: 20px 0; 
+    margin: 0; /* Removendo margens externas */
 }
 
 .containerR {
