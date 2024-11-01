@@ -1,99 +1,106 @@
+/* Reset de margem e preenchimento */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+/* Estilo do contêiner de sugestões */
+.suggestion-containerS {
     font-family: Arial, sans-serif;
-    background-color: #e0fce0;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.suggestion-container { 
+    background-color: #e0fce0; /* Cor de fundo da sugestão */
+    color: #333; /* Cor do texto */
     width: 60%;
-    background-color: #fff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto; /* Para centralizar a seção */
 }
 
-h1 {
+/* Estilo do título */
+.h1S {
     text-align: center;
-    color: green;
+    color: green; /* Cor do título */
     margin-bottom: 20px;
 }
 
-.suggestion-image-section { 
+/* Seção da imagem de sugestão */
+.suggestion-image-sectionS {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.suggestion-icon { 
+/* Estilo do ícone de sugestão */
+.suggestion-iconS {
     width: 190px;
-    margin-left: 20px;
+    margin-left: 20px; /* Margem da esquerda */
 }
 
-.function-description h2 {
-    color: green;
+/* Descrição da função */
+.function-descriptionS h2 {
+    color: green; /* Cor do subtítulo */
     margin-bottom: 10px;
-    padding-left: 40%;
+    text-align: center; /* Centralizar texto */
 }
 
-p {
-    padding-left: 60px;
-    font-size: 85%;
+.function-descriptionS p {
+    padding-left: 10px; /* Margem da esquerda */
+    font-size: 85%; /* Tamanho da fonte */
 }
 
-.suggestion-form {
+/* Estilo do formulário de sugestões */
+.suggestion-formS {
     display: flex;
     flex-direction: column;
 }
 
-.suggestion-form h3 {
-    margin-bottom: 10px;
+/* Estilo do cabeçalho do formulário */
+.h3S {
+    margin-bottom: 10px; /* Margem inferior */
 }
 
-.suggestion-form label {
-    margin-top: 15px;
-    font-weight: bold;
+/* Estilo dos rótulos do formulário */
+.labelS {
+    margin-top: 15px; /* Margem superior */
+    font-weight: bold; /* Negrito */
 }
 
-.suggestion-form input,
-.suggestion-form textarea {
-    margin-top: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
+/* Estilo dos campos de entrada e área de texto */
+.inputS,
+.textareaS {
+    margin-top: 5px; /* Margem superior */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda */
+    width: 100%; /* Largura total */
 }
 
-.suggestion-feedback-section { 
+/* Seção de feedback da sugestão */
+.suggestion-feedback-sectionS {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Espaçamento entre os itens */
 }
 
-.negative,
-.positive {
-    width: 48%;
+/* Estilo dos campos de feedback */
+.negativeS,
+.positiveS {
+    width: 48%; /* Largura de 48% para as seções de feedback */
 }
 
-button {
-    padding: 10px;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px 90px;
-    font-size: 16px;
+/* Estilo do botão de envio */
+.buttonS {
+    padding: 10px; /* Espaçamento interno */
+    background-color: green; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    margin: 10px 0; /* Margens verticais */
+    font-size: 16px; /* Tamanho da fonte */
 }
 
-button:hover {
-    background-color: darkgreen;
+/* Efeito hover do botão */
+.buttonS:hover {
+    background-color: darkgreen; /* Cor do botão ao passar o mouse */
 }
