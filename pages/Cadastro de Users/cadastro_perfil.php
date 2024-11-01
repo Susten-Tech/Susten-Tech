@@ -1,6 +1,8 @@
 <?php
-session_start();
-include 'conexao.php'; 
+$servidor = "localhost";
+$user = "root";
+$password = "root";
+$bd = "bd_sustentech";
 
 
 if (!isset($_SESSION['cd_cliente'])) {

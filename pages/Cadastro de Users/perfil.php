@@ -116,7 +116,7 @@ try {
             <p><strong>CEP:</strong> <?php echo htmlspecialchars($userData['nr_cep']); ?></p>
         </div>
         <div class="button-group">
-        <button onclick="location.href='../Cadastro Produtos/cadastro_produtos.html'" class="btn">Cadastrar Produtos</button>
+        <button onclick="location.href='Cadastro Produtos/cadastro_produtos'" class="btn">Cadastrar Produtos</button>
         <button onclick="location.href='editar_dados.php'" class="btn">Editar Dados</button>
         <button onclick="location.href='redefinir_senha.php'" class="btn">Redefinir Senha</button>
     <div>

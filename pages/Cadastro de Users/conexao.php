@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost'; 
-$db   = 'bd_Sustentech'; 
+$db   = 'bd_sustentech'; 
 $user = 'root';
 $pass = 'root'; 
 $charset = 'utf8mb4'; 
