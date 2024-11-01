@@ -156,3 +156,7 @@ usuario varchar(45) null,
 email varchar(45) null, 
 senha varchar(45) null, 
 mensagem longtext null);
+
+use bd_sustentech;
+alter table tb_produto
+modify column vl_produto varchar(45) not null;

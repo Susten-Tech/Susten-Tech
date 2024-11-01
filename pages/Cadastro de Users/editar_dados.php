@@ -137,7 +137,7 @@ if (!$cliente) {
             </div>
             <ul class="nav-links">
                 <li><a href="../../index.html">Início</a></li>
-                <li><a href="../Produtos/produtos.html">Produtos</a></li>
+                <li><a href="../Produtos/produtos.php">Produtos</a></li>
                 <li class="dropdown">
                     <a href="#">Cadastro</a>
                     <ul class="dropdown-content">
@@ -152,7 +152,7 @@ if (!$cliente) {
                 <li><a href="../Sugestoes/sugestoes.html">Sugestões</a></li>
             </ul>
             <div class="perfil-iconN">
-                <a href="#"><img class="image" src="../NavBar/imagens/icone_perfil.png" alt="ícone perfil"></a>
+                <a href="pages/Cadastro de Users/login.html"><img class="image" src="../NavBar/imagens/icone_perfil.png" alt="ícone perfil"></a>
             </div>
         </div>
     </nav>

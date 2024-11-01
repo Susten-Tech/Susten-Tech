@@ -104,7 +104,44 @@
     </script> -->
 </head>
 <body>
-
+<!--BARRA DE NAVEGAÇÃO-->
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="nav-logo">
+            <a href="#"><img class="image" src="../NavBar/imagens/sustentech_logo.png" alt="sustentech logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Início</a></li>
+            <li><a href="../Produtos/produtos.php">Produtos</a></li>
+            <li class="dropdown">
+                <a href=>Cadastro</a>
+                <ul class="dropdown-content">
+                    <li><a href="../Cadastro de users/usuarios.html">Usuários</a></li>
+                    <li><a href="../Cadastro de users/usuarios_empresas.html">Empresas</a></li>
+                    <li><a href="../Cadastro Produtos/cadastro_produtos.html">Produtos</a></li>
+                </ul>
+            </li>
+            <li><a href="../Sobre Nos/sobre_nos.html">Sobre Nós</a></li>
+            <li><a href="../Locais de Descarte/locais_descarte.html">Locais de Reciclagem</a></li>
+            <li><a href="../Fale Conosco/fale_conosco.html">Fale Conosco</a></li>
+            <li><a href="../Sugestoes/sugestoes.html">Sugestões</a></li>
+        </ul>
+  
+         <!--
+        <div class="N">
+            <input type="text" placeholder="Pesquisar...">
+            <button>
+                <img class="image" src="pages/NavBar/imagens/lupa.png" alt="ícone lupa">
+            </button>
+        </div>
+        -->
+  
+        <div class="perfil-iconN">
+            <a href="pages/Cadastro de Users/login.html"><img class="image" src="../NavBar/imagens/icone_perfil.png" alt="ícone perfil"></a>
+        </div>
+    </div>
+  </nav>
+  <br>
 <section class="products">
     <div class="container">
         <?php

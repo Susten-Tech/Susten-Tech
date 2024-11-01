@@ -5,11 +5,8 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: #e0fce0;
-}
-
-.contact-container { 
+/* Estilo específico para a página "Fale Conosco" */
+.contact-containerF { 
     width: 50%;
     margin: 50px auto;
     padding: 20px;
@@ -18,34 +15,34 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.h1F {
     text-align: center;
     color: #006400;
 }
 
-p {
+.pF {
     text-align: center;
     margin-bottom: 20px;
 }
 
-form {
+.formF {
     display: flex;
     flex-direction: column;
 }
 
-label {
+.labelF {
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-input, textarea {
+.inputF, .textareaF {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #cccccc;
     border-radius: 5px;
 }
 
-button {
+.buttonF {
     padding: 12px;
     background-color: #006400;
     color: white;
@@ -55,6 +52,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.buttonF:hover {
     background-color: #004b23;
 }

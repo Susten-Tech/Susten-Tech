@@ -1,71 +1,58 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
+.suggestion-containerS {
     font-family: Arial, sans-serif;
-    background-color: #e0fce0;
+    background-color: white;
     color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.suggestion-container { 
     width: 60%;
-    background-color: #fff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
 }
 
-h1 {
+.suggestion-containerS h1 {
     text-align: center;
     color: green;
     margin-bottom: 20px;
 }
 
-.suggestion-image-section { 
+.suggestion-image-sectionS {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.suggestion-icon { 
+.suggestion-iconS {
     width: 190px;
     margin-left: 20px;
 }
 
-.function-description h2 {
+.function-descriptionS h2 {
     color: green;
     margin-bottom: 10px;
     padding-left: 40%;
 }
 
-p {
+.function-descriptionS p {
     padding-left: 60px;
     font-size: 85%;
 }
 
-.suggestion-form {
+.suggestion-formS {
     display: flex;
     flex-direction: column;
 }
 
-.suggestion-form h3 {
+.suggestion-formS h3 {
     margin-bottom: 10px;
 }
 
-.suggestion-form label {
+.suggestion-formS label {
     margin-top: 15px;
     font-weight: bold;
 }
 
-.suggestion-form input,
-.suggestion-form textarea {
+.suggestion-formS input,
+.suggestion-formS textarea {
     margin-top: 5px;
     padding: 10px;
     border-radius: 5px;
@@ -73,17 +60,17 @@ p {
     width: 100%;
 }
 
-.suggestion-feedback-section { 
+.suggestion-feedback-sectionS {
     display: flex;
     justify-content: space-between;
 }
 
-.negative,
-.positive {
+.negativeS,
+.positiveS {
     width: 48%;
 }
 
-button {
+.suggestion-formS button {
     padding: 10px;
     background-color: green;
     color: white;
@@ -94,6 +81,6 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+.suggestion-formS button:hover {
     background-color: darkgreen;
 }

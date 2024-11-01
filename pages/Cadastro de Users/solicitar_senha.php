@@ -14,7 +14,7 @@
         </div>
         <ul class="nav-links">
             <li><a href="../../index.html">Início</a></li>
-            <li><a href="../Produtos/produtos.html">Produtos</a></li>
+            <li><a href="../Produtos/produtos.php">Produtos</a></li>
             <li class="dropdown">
                 <a href=>Cadastro</a>
                 <ul class="dropdown-content">

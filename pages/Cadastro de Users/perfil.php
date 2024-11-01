@@ -100,11 +100,11 @@ try {
       <nav class="navbar">
         <div class="navbar-container">
             <div class="nav-logo">
-                <a href="#"><img class="image" src="../NavBar/imagens/sustentech_logo.png" alt="sustentech logo"></a>
+                <a href="pages/Cadastro de Users/login.html"><img class="image" src="../NavBar/imagens/sustentech_logo.png" alt="sustentech logo"></a>
             </div>
             <ul class="nav-links">
                 <li><a href="../../index.html">Início</a></li>
-                <li><a href="../Produtos/produtos.html">Produtos</a></li>
+                <li><a href="../Produtos/produtos.php">Produtos</a></li>
                 <li class="dropdown">
                     <a href=>Cadastro</a>
                     <ul class="dropdown-content">

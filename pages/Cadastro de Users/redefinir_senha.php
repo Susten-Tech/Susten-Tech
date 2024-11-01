@@ -79,7 +79,7 @@
             <h3>Navegação</h3>
             <ul>
                 <li><a href="../../index.html">Página Inicial</a></li>
-                <li><a href="../">Produtos</a></li>
+                <li><a href="../Produtos/produtos.php">Produtos</a></li>
                 <li><a href="../Cadastro de users/usuarios.html">Cadastro</a></li>
                 <li><a href="../Sobre Nos/sobre_nos.html">Sobre nós</a></li>
                 <li><a href="../Sugestoes/sugestoes.html">Sugestões</a></li>
