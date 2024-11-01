@@ -2,7 +2,7 @@
 $servidor = "localhost";
 $user = "root";
 $password = "root";
-$banco = "bd_Sustentech";
+$banco = "bd_sustentech";
 
 // Criando a conexão
 $conn = new mysqli($servidor, $user, $password,  $banco);
@@ -15,12 +15,11 @@ if ($conn->connect_error) {
 }
 
 // Verifique se o método de requisição é POST
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // Obtenha os dados do formulário e escape os valores para evitar SQL Injection
     $nm_produto = $conn->real_escape_string($_POST["nm_produto"]);
     $nm_marca = $conn->real_escape_string($_POST["nm_marca"]);
     $dt_compra = $conn->real_escape_string($_POST["dt_compra"]);
-    $marca_componentes = $conn->real_escape_string($_POST["marca_componentes"]);
     $modelo_produto = $conn->real_escape_string($_POST["modelo_produto"]);
     $condicao_produto = $conn->real_escape_string($_POST["condicao_produto"]);
     $ds_produto = $conn->real_escape_string($_POST["ds_produto"]);
@@ -28,19 +27,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Query de inserção no banco corrigida
     $insert = "INSERT INTO tb_produto 
-                (nm_produto, nm_marca, dt_compra, marca_componentes, modelo_produto, condicao_produto, ds_produto, vl_produto) 
+                (nm_produto, nm_marca, dt_compra, modelo_produto, condicao_produto, ds_produto, vl_produto) 
                 VALUES 
-                ('$nm_produto', '$nm_marca', '$dt_compra', '$marca_componentes', '$modelo_produto', '$condicao_produto', '$ds_produto', '$vl_produto')";
+                ('$nm_produto', '$nm_marca', '$dt_compra', '$modelo_produto', '$condicao_produto', '$ds_produto', '$vl_produto')";
 
     // Executar a query
     $query = mysqli_query($conn, $insert);
 
     if ($query) {
         echo "Inserido com sucesso";
+        header("Location: ../Produtos/produtos.php");
+        exit(); // É importante usar exit após o header para evitar que o script continue executando
     } else {
         echo "Erro ao inserir: " . mysqli_error($conn);
-    }
-}
+    }    
 
 $conn->close();
 ?>

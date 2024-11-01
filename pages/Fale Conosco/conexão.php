@@ -2,7 +2,7 @@
  
 $hostname = "localhost";
 $username = "root";
-$password = '';
+$password = "root";
 $database = "bd_sustentech";
  
 $conexao = new mysqli($hostname, $username, $password, $database);
