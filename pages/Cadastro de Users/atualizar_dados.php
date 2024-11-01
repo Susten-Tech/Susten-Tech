@@ -7,7 +7,7 @@ $bd = "bd_sustentech";
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 // Criando conexão com o banco de dados
-$conn = new mysqli($servidor, $user, $password, $bd);
+$conn = new mysqli($servidor, $user, $password,$bd);
 
 
 $cd_cliente = $_POST['cd_cliente'];

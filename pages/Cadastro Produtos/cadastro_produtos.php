@@ -25,6 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ds_produto = $conn->real_escape_string($_POST["ds_produto"]);
     $vl_produto = $conn->real_escape_string($_POST["vl_produto"]);
 
+}
     // Query de inserção no banco corrigida
     $insert = "INSERT INTO tb_produto 
                 (nm_produto, nm_marca, dt_compra, modelo_produto, condicao_produto, ds_produto, vl_produto) 
@@ -36,10 +37,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($query) {
         echo "Inserido com sucesso";
+        header("Location: ../Produtos/produtos.php");
+        exit(); // É importante usar exit após o header para evitar que o script continue executando
     } else {
         echo "Erro ao inserir: " . mysqli_error($conn);
-    }
-}
+    }    
 
 $conn->close();
+
 ?>

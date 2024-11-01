@@ -10,53 +10,166 @@
     <style>
         body {
             background-color: #F1FAF1;
+            font-family: "DM Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar {
+            background-color: #DBFEDD;
+            padding: 20px;
+        }
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .login {
-            font-family: "DM Sans", sans-serif;
-            position: absolute;
-            background-color: #DBFEDD;
             text-align: center;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            margin: auto;
+            background-color: #DBFEDD;
             padding: 50px;
             color: #0D7E2E;
+            width: 900px;
+
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
         }
         input {
-            padding: 15px;
+            padding: 20px;
             font-size: 18px;
             width: 90%;
             margin-bottom: 10px;
             outline: none;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
         button {
-            font-family: "DM Sans", sans-serif;
-            margin-top: 20px;
-            width: 70%;
+            width: 90%;
             height: 40px;
             cursor: pointer;
-            border-radius: 6%;
-            background-color: #0D7E2E;
-            color: white;
-        }
-        button {
             background-color: #2f5c2c;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
         }
-        h2 {
-            font-family: "DM Sans", sans-serif;
-            padding: 8px;
-            font-size: 40px;
+        h1 {
+            font-size: 24px;
+            color: #0D7E2E;
+        }
+        .footer {
+            background-color: #DBFEDD;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto; 
+        }
+        .containerR {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: auto;
+            padding: 10px;
+        }
+        .footer-contactR, .footer-navigationR {
+            font-size: 14px;
+            color: #0D7E2E;
+        }
+        .footer-bottomR {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #0D7E2E;
+        }
+        .footer-bottomR a {
+            color: #0D7E2E;
+            margin: 0 5px;
+            text-decoration: none;
         }
     </style>
+    <link rel="stylesheet" href="../Rodapé/rodape.css">
+    <link rel="stylesheet" href="../NavBar/navbar.css">
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
 </head>
 <body>
+    <!--BARRA DE NAVEGAÇÃO-->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="nav-logo">
+                <a href="#"><img class="image" src="../NavBar/imagens/sustentech_logo.png" alt="sustentech logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../Produtos/produtos.php">Produtos</a></li>
+                <li class="dropdown">
+                    <a href="#">Cadastro</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../Cadastro de users/usuarios.html">Usuários</a></li>
+                        <li><a href="../Cadastro de users/usuarios_empresas.html">Empresas</a></li>
+                        <li><a href="../Cadastro Produtos/cadastro_produtos.html">Produtos</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Sobre Nós/sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="../Locais de Descarte/locais_descarte.html">Locais de Descarte</a></li>
+                <li><a href="../Fale Conosco/fale_conosco.html">Fale Conosco</a></li>
+                <li><a href="../Sugestoes/sugestoes.html">Sugestões</a></li>
+            </ul>
+            <div class="perfil-iconN">
+                <a href="pages/Cadastro de Users/login.html"><img class="image" src="../NavBar/imagens/icone_perfil.png" alt="ícone perfil"></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Área de Login -->
     <div class="login">
         <h1>Entre na sua conta:</h1>
         <form method="POST" action="login.php">
             <input type="email" name="email" placeholder="Email:" required>
             <input type="password" name="senha" placeholder="Senha:" required>
             <button type="submit">Login</button>
+            <button onclick="location.href='enviar_email.html'" class="btn">Redefinir Senha</button>
         </form>        
     </div>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="containerR">
+            <div class="footer-logoR">
+                <img src="../Rodapé/img/sustentech_rodape.png" alt="Logo Sustentech" class="logoR">
+            </div>
+            <div class="footer-contactR">
+                <h3>Contato</h3>
+                <p>sustentech.contato@outlook.com.br</p>
+                <p>sustentech.contato@gmail.com</p>
+                <p>Fale Conosco</p>
+                <div class="social-iconsR">
+                    <a href="https://www.instagram.com/sustentech_lvlc/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">
+                        <img src="../Rodapé/img/instagram.png" alt="Instagram" class="social-iconR">
+                    </a>
+                    <a href="https://github.com/Susten-Tech" target="_blank" rel="noopener noreferrer">
+                        <img src="../Rodapé/img/github.png" alt="GitHub" class="social-iconR">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-navigationR">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="../../index.html">Página Inicial</a></li>
+                    <li><a href="../Produtos/produtos.php">Produtos</a></li>
+                    <li><a href="../Cadastro de users/usuarios.html">Cadastro</a></li>
+                    <li><a href="../Sobre Nos/sobre_nos.html">Sobre nós</a></li>
+                    <li><a href="../Sugestoes/sugestoes.html">Sugestões</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottomR">
+            <a href="../Privacidade/privacidade.html">Política de Privacidade</a>
+            <a href="../Termos/termos.html">Termos de Uso</a>
+            <a href="../Locais de Descarte/locais_descarte.html">Locais de Descarte</a>
+        </div>
+    </footer>
 </body>
 </html>
