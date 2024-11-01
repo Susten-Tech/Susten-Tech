@@ -27,7 +27,6 @@
 
 .nav-logo {
     margin-left: 2%; 
-    margin-left: 300px;
 }
 
 .nav-links {
@@ -36,8 +35,6 @@
     gap: 1%; 
     flex-grow: 1;
     justify-content: center; 
-    margin-top: 15px;
-    margin-left: 150px;
 }
 
 .nav-links li {
@@ -81,8 +78,6 @@
 
 .perfil-iconN {
     margin-right: 2%; 
-    margin-left: 25px; 
-    margin-right: 300px;
 }
 
 .perfil-iconN a {
@@ -90,6 +85,7 @@
     font-size: 24px;
 }
 
+/* Responsivo */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column; 
@@ -106,10 +102,10 @@
     }
 
     .nav-logo {
-        margin: 10px 0;
+        margin: 10px 0; 
     }
 
     .perfil-iconN {
-        margin: 10px 0; 
+        margin: 10px 0;
     }
 }
