@@ -82,7 +82,7 @@
                 <li><a href="../Produtos/produtos.php">Produtos</a></li>
                 <li><a href="../Cadastro de users/usuarios.html">Cadastro</a></li>
                 <li><a href="../Sobre Nos/sobre_nos.html">Sobre nós</a></li>
-                <li><a href="../Sugestoes/sugestoes.html">Sugestões</a></li>
+                <li><a href="../Parceiros/parceiros.html">Parceiros</a></li>
             </ul>
         </div>
     </div>
