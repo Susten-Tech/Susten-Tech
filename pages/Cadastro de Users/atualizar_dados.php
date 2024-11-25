@@ -1,7 +1,7 @@
 <?php
 $servidor = "localhost";
 $user = "root";
-$password = "root";
+$password = "";
 $bd = "bd_sustentech";
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);

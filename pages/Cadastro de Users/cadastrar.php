@@ -1,7 +1,7 @@
 <?php
 $servidor = "localhost";
 $user = "root";
-$password = "root";
+$password = "";
 $bd = "bd_sustentech";
 
 $conn = new mysqli($servidor, $user, $password, $bd);

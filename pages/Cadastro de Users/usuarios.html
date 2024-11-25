@@ -1,183 +1,151 @@
 <!DOCTYPE html>
-<html lang="pt-br">  
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Usuários</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../Rodapé/rodape.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="../NavBar/navbar.css">
-<style>
-    body{
-        background-color: #F1FAF1;
-    }
-.login
-{
-    font-family: "DM Sans", sans-serif;
-    width: 500px;
-    height: 850px;
-    background-color: #DBFEDD ;
-    margin-top: 70px;
-    border-radius: 5%;
-    text-align: center;
-    margin-left: 33%;
-}
-.body{
-    background-color: #c3f6c3;
-}
-input{
-    padding: 5px;
-    font-size: 20px;
-    width: 60%;
-    margin-bottom: 8px;
-    outline: none;
-}
-label{
-    font-family: "DM Sans", sans-serif;
-    padding: 10px;
-    width: 30%;
-    font-size: 20px;
-}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Rodapé/rodape.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../NavBar/navbar.css">
+    <style>
+        body {
+            background-color: #F1FAF1;
+            font-family: "DM Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-.botao{
-    font-family: "DM Sans", sans-serif;
-    margin-top: 20px;
-    width: 70%;
-    height: 40px;
-    cursor: pointer;
-    border-radius: 6%;
-    background-color: #0D7E2E;
-    color: white;
+        /* Estilo específico para a página "Cadastro de Usuários" */
+        .contact-containerF { 
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-}
-.botao:hover{
-    background-color: #2f5c2c;
-}
-h2{
-    font-family: "DM Sans", sans-serif;
-    padding: 8px;
-    font-size: 40px;
-}
+        .h1F {
+            text-align: center;
+            color: #006400;
+            font-size: 32px;
+        }
 
+        .pF {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .formF {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .labelF {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .inputF, .textareaF {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        .buttonF {
+            padding: 12px;
+            background-color: #006400;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 110px;
+            cursor: pointer;
+        }
+
+        .buttonF:hover {
+            background-color: #004b23;
+        }
+
+        @media (max-width: 768px) {
+            .contact-containerF {
+                width: 90%;
+            }
+
+            .buttonF {
+                margin: 10px auto;
+            }
+        }
     </style>
 </head>
-<nav class="navbar">
-    <div class="navbar-container">
-        <div class="nav-logo">
-            <a href="pages/Cadastro de Users/login.html"><img class="image" src="../NavBar/imagens/sustentech_logo.png" alt="sustentech logo"></a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="../../index.html">Início</a></li>
-            <li><a href="../Produtos/produtos.php">Produtos</a></li>
-            <li class="dropdown">
-                <a href=>Cadastro</a>
-                <ul class="dropdown-content">
-                    <li><a href="../Cadastro de users/usuarios.html">Usuários</a></li>
-                    <li><a href="../Cadastro de users/usuarios_empresas.html">Empresas</a></li>
-                    <li><a href="../Cadastro Produtos/cadastro_produtos.html">Produtos</a></li>
-                </ul>
-            </li>
-            <li><a href="../Sobre Nos/sobre_nos.html">Sobre Nós</a></li>
-            <li><a href="../Locais de Descarte/locais_descarte.html">Locais de Descarte</a></li>
-            <li><a href="../Fale Conosco/fale_conosco.html">Fale Conosco</a></li>
-            <li><a href="../Sugestoes/sugestoes.html">Sugestões</a></li>
-        </ul>
-
-        <!--
-    <div class="N">
-        <input type="text" placeholder="Pesquisar...">
-        <button>
-            <img class="image" src="pages/NavBar/imagens/lupa.png" alt="ícone lupa">
-        </button>
-    </div>
-    -->
-
-        <div class="perfil-iconN">
-            <a href="#"><img class="image" src="../NavBar/imagens/icone_perfil.png" alt="ícone perfil"></a>
-        </div>
-    </div>
-</nav>
-
-
 <body>
-    <div class="login">
-        <h2>Cadastro de login</h2>
-        <form method="POST" action="cadastro.php">
-        <label for="usuario">Usuário:</label><br>
-        <input type="text" id="nm_cliente" name="nm_cliente" required><br>
-    
-        <label for="usuario">Email:</label><br>
-        <input type="text" id="email" name="email" required><br>
-    
-        <label for="usuario">Endereço:</label><br>
-        <input type="text" id="nm_endereco" name="nm_endereco" required><br>
-    
-        <label for="usuario">Número:</label><br>
-        <input type="text" id="nr_endereco" name="nr_endereco" required><br>
-       
-        <label for="usuario">Sigla do Estado:</label><br>
-        <input type="text" id="sg_estado" name="sg_estado" required><br>
-    
-        <label for="usuario">CEP:</label><br>
-        <input type="text" id="nr_cep" name="nr_cep" required><br>
-        
-        <label for="usuario">Telefone:</label><br>
-        <input type="nr_telefone" id="usuario" name="nr_telefone" required><br>
-
-        <label for="senha">Senha:</label><br>
-        <input type="password" id="usuario" name="senha" required><br>
-        
-        <label for="ConfirmarSenha"> Confirme a senha:</label><br>
-        <input type="password" id="ConfirmaSenha" name="ConfirmaSenha" required><br>
-    <br>
-     <h1><input class="botao" type="submit"  value="Cadastrar"></h1>
-    
-    </form>
-    </div>
-<br>
-<br>
-    <!--RODAPÉ-->
-<footer class="footer">
-    <div class="containerR">
-        <div class="footer-logoR">
-            <img src="../Rodapé/img/sustentech_rodape.png" alt="Logo Sustentech" class="logoR">
-        </div>
-        <div class="footer-contactR">
-            <h3>Contato</h3>
-            <p>sustentech.contato@outlook.com.br</p>
-            <p>sustentech.contato@gmail.com</p>
-            <p>Fale Conosco</p>
-            <div class="social-iconsR">
-                <a href="https://www.instagram.com/sustentech_lvlc/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">
-                    <img src="../Rodapé/img/instagram.png" alt="Instagram" class="social-iconR">
-                </a>
-                <a href="https://github.com/Susten-Tech" target="_blank" rel="noopener noreferrer">
-                    <img src="../Rodapé/img/github.png" alt="GitHub" class="social-iconR">
-                </a>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="nav-logo">
+                <a href="pages/Cadastro de Users/login.html"><img class="image" src="../NavBar/imagens/sustentech_logo.png" alt="sustentech logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../Produtos/produtos.php">Produtos</a></li>
+                <li class="dropdown">
+                    <a href="#">Cadastro</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../Cadastro de users/usuarios.html">Usuários</a></li>
+                        <li><a href="../Cadastro Produtos/cadastro_produtos.html">Produtos</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Sobre Nos/sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="../Locais de Descarte/locais_descarte.html">Locais de Descarte</a></li>
+                <li><a href="../Fale Conosco/fale_conosco.html">Fale Conosco</a></li>
+                <li><a href="../Parceiros/parceiros.html">Parceiros</a></li>
+            </ul>
+            <div class="perfil-iconN">
+                <a href="#"><img class="image" src="../NavBar/imagens/icone_perfil.png" alt="ícone perfil"></a>
             </div>
         </div>
-        <div class="footer-navigationR">
-            <h3>Navegação</h3>
-            <ul>
-                <li><a href="../../index.html">Página Inicial</a></li>
-                <li><a href="../">Produtos</a></li>
-                <li><a href="../Cadastro de users/usuarios.html">Cadastro</a></li>
-                <li><a href="../Sobre Nos/sobre_nos.html">Sobre nós</a></li>
-                <li><a href="../Sugestoes/sugestoes.html">Sugestões</a></li>
-            </ul>
-        </div>
+    </nav>
+
+    <!-- Container de Cadastro de Usuários -->
+    <div class="contact-containerF">
+        <h1 class="h1F">Cadastro de Usuário</h1>
+        <p class="pF">Preencha o formulário abaixo para criar uma conta</p>
+        
+        <form method="POST" action="cadastro.php" class="formF">
+            <label for="nm_cliente" class="labelF">Usuário:</label>
+            <input type="text" id="nm_cliente" name="nm_cliente" class="inputF" required>
+            
+            <label for="email" class="labelF">Email:</label>
+            <input type="email" id="email" name="email" class="inputF" required>
+            
+            <label for="nm_endereco" class="labelF">Endereço:</label>
+            <input type="text" id="nm_endereco" name="nm_endereco" class="inputF" required>
+            
+            <label for="nr_endereco" class="labelF">Número:</label>
+            <input type="text" id="nr_endereco" name="nr_endereco" class="inputF" required>
+            
+            <label for="sg_estado" class="labelF">Sigla do Estado:</label>
+            <input type="text" id="sg_estado" name="sg_estado" class="inputF" required>
+            
+            <label for="nr_cep" class="labelF">CEP:</label>
+            <input type="text" id="nr_cep" name="nr_cep" class="inputF" required>
+            
+            <label for="nr_telefone" class="labelF">Telefone:</label>
+            <input type="text" id="nr_telefone" name="nr_telefone" class="inputF" required>
+            
+            <label for="senha" class="labelF">Senha:</label>
+            <input type="password" id="senha" name="senha" class="inputF" required>
+            
+            <label for="ConfirmaSenha" class="labelF">Confirmar Senha:</label>
+            <input type="password" id="ConfirmaSenha" name="ConfirmaSenha" class="inputF" required>
+
+            <input type="submit" class="buttonF" value="Cadastrar">
+        </form>
     </div>
-    <div class="footer-bottomR">
-        <a href="../Privacidade/privacidade.html">Política de Privacidade</a>
-        <a href="../Termos/termos.html">Termos de Uso</a>
-        <a href="../Locais de Descarte/locais_descarte.html">Locais de Descarte</a>
 
-
-
-
-
+    <!-- Rodapé -->
+    
 </body>
 </html>

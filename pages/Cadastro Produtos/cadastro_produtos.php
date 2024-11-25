@@ -1,7 +1,7 @@
 <?php
 $servidor = "localhost";
 $user = "root";
-$password = "root";
+$password = "";
 $banco = "bd_sustentech";
 
 // Criando a conexão

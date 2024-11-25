@@ -3,7 +3,7 @@
 $host = 'localhost'; 
 $db   = 'bd_sustentech'; 
 $user = 'root';
-$pass = 'root'; 
+$pass = ''; 
 $charset = 'utf8mb4'; 
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset"; 
