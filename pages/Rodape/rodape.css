@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.footer {
+    background-color: #c2f7c2; 
+    padding: 10px 20px 40px; 
+    font-family: 'DM Sans', sans-serif;
+    margin: auto; /* Removendo margens externas */
+}
+
+.containerR {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start;
+    padding: 20px; 
+    border-bottom: 1px solid #333;
+    width: 100%; 
+}
+
+.footer-logoR,
+.footer-contactR,
+.footer-navigationR {
+    text-align: center; 
+    color: #333;
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 10px; 
+    flex: 1 1 200px; 
+    padding: 0 15px; 
+}
+
+.footer-logoR .logoR {
+    width: 120px; 
+    height: auto;
+}
+
+.footer-logoR p {
+    font-size: 12px; 
+    margin-top: 10px;
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.footer-contactR h3,
+.footer-navigationR h3 {
+    color: #329932;
+    font-size: 14px; 
+    margin-bottom: 10px;
+}
+
+.footer-contactR p,
+.footer-navigationR ul {
+    font-size: 12px; 
+    line-height: 1.5;
+}
+
+.social-iconsR {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-iconR {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-navigationR ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-navigationR li {
+    margin-bottom: 5px;
+}
+
+.footer-navigationR a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-bottomR {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+    font-size: 12px; 
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.footer-bottomR a {
+    color: #333;
+    text-decoration: none;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../NavBar/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="../Rodape/rodape.css">
+        <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+ 
+</head>
+ 
+<body class="babigi">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="nav-logo">
+                <a href="#"><img class="image" src="../NavBar/imagens/sustentech_logo.png" alt="sustentech logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../Produtos/produtos.php">Produtos</a></li>
+                <li class="dropdown">
+                    <a href=>Cadastro</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../CadastroUsers/usuarios.html">Usuários</a></li>
+                        
+                        <li><a href="../CadastroProdutos/cadastro_produtos.html">Produtos</a></li>
+                    </ul>
+                </li>
+                <li><a href="../SobreNos/sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="../LocaisDescarte/locais_descarte.html">Locais de Descarte</a></li>
+                <li><a href="../FaleConosco/fale_conosco.html">Fale Conosco</a></li>
+                <li><a href="../Parceiros/parceiros.html">Parceiros</a></li>
+            </ul>
+ 
+            <!--
+        <div class="N">
+            <input type="text" placeholder="Pesquisar...">
+            <button>
+                <img class="image" src="pages/NavBar/imagens/lupa.png" alt="ícone lupa">
+            </button>
+        </div>
+        -->
+ 
+            <div class="perfil-iconN">
+                <a href="#"><img class="image" src="../NavBar/imagens/icone_perfil.png" alt="ícone perfil"></a>
+            </div>
+        </div>
+    </nav>
+ 
+ 
+    <div class="headache">
+        <h1 id="title">Pontos de Descarte</h1>
+        <p>Encontre pontos de descarte e assistências técnicas próximas à sua região!</p>
+    </div>
+ 
+    <!-- Mapa Geográfico -->
+    <div id="map" class="map-responsive">
+        <div class="row">
+ 
+            <div id="descarte" class="col row footbutu">
+                <div class="row footbackops">
+ 
+                    <label for="cidade">Selecione uma cidade do Estado de São Paulo:</label>
+                    <!-- Locais de Descarte -->
+                    <select id="cidade1">
+                        <option value="">Nenhum...</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Guarulhos">Guarulhos</option>
+                        <option value="Campinas">Campinas</option>
+                        <option value="São Bernardo do Campo">São Bernardo do Campo</option>
+                        <option value="Santo André">Santo André</option>
+                        <option value="Osasco">Osasco</option>
+                        <option value="Sorocaba">Sorocaba</option>
+                        <option value="Ribeirão Preto">Ribeirão Preto</option>
+                        <option value="Mongaguá">Mongaguá</option>
+                        <option value="Praia Grande">Praia Grande</option>
+                        <option value="Santos">Santos</option>
+                    </select>
+ 
+                    <select id="cidade2">
+                        <option value="">Nenhum...</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Guarulhos">Guarulhos</option>
+                        <option value="Campinas">Campinas</option>
+                        <option value="São Bernardo do Campo">São Bernardo do Campo</option>
+                        <option value="Santo André">Santo André</option>
+                        <option value="Osasco">Osasco</option>
+                        <option value="Sorocaba">Sorocaba</option>
+                        <option value="Ribeirão Preto">Ribeirão Preto</option>
+                        <option value="Mongaguá">Mongaguá</option>
+                        <option value="Praia Grande">Praia Grande</option>
+                        <option value="Santos">Santos</option>
+                    </select>
+                    <!-- Ajuda e Suporte -->
+                    <button id="descarte-btn" class="btn col footbuco" type="button">Locais de Descarte </button>
+                    <button id="suporte-btn" class="btn col footbuco" type="button">Locais de assistências</button>
+                </div>
+            </div>
+ 
+ 
+ 
+            <div class="col">
+                <iframe id="map-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176279.441374688!2d-51.09423667530317!3d-22.40173287239382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce597d462f58ad%3A0x1e5241e2e17b7c17!2sS%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1729128429112!5m2!1spt-BR!2sbr"
+                    style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+ 
+
+   <!--RODAPÉ-->
+<footer class="footer">
+    <div class="containerR">
+        <div class="footer-logoR">
+            <img src="../Rodape/img/sustentech_rodape.png" alt="Logo Sustentech" class="logoR">
+        </div>
+        <div class="footer-contactR">
+            <h3>Contato</h3>
+            <p>sustentech.contato@outlook.com.br</p>
+            <p>sustentech.contato@gmail.com</p>
+            <p>Fale Conosco</p>
+            <div class="social-iconsR">
+                <a href="https://www.instagram.com/sustentech_lvlc/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">
+                    <img src="../Rodape/img/instagram.png" alt="Instagram" class="social-iconR">
+                </a>
+                <a href="https://github.com/Susten-Tech" target="_blank" rel="noopener noreferrer">
+                    <img src="../Rodape/img/github.png" alt="GitHub" class="social-iconR">
+                </a>
+            </div>
+        </div>
+        <div class="footer-navigationR">
+            <h3>Navegação</h3>
+            <ul>
+                <li><a href="../../index.html">Página Inicial</a></li>
+                <li><a href="../Produtos/produtos.php">Produtos</a></li>
+                <li><a href="../CadastroUsers/usuarios.html">Cadastro</a></li>
+                <li><a href="../SobreNos/sobre_nos.html">Sobre nós</a></li>
+                <li><a href="../Sugestoes/sugestoes.html">Sugestões</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottomR">
+        <a href="../Privacidade/privacidade.html">Política de Privacidade</a>
+        <a href="../Termos/termos.html">Termos de Uso</a>
+        <a href="../LocaisDescarte/locais_descarte.html">Locais de Descarte</a>
+    </div>
+  </footer>
+  
+    <script src="main.js"></script>
+    <script src="teste.js"></script>
+ 
+</body>
+ 
+</html>

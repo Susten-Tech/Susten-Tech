@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produto</title>
     <link rel="stylesheet" href="../NavBar/navbar.css">
-    <link rel="stylesheet" href="../Rodapé/Rodapé.css">
+    <link rel="stylesheet" href="../Rodape/Rodapé.css">
     <link rel="icon" type="image/png" href="../../img/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <style>
@@ -116,14 +116,14 @@
             <li class="dropdown">
                 <a href=>Cadastro</a>
                 <ul class="dropdown-content">
-                    <li><a href="../Cadastro de users/usuarios.html">Usuários</a></li>
+                    <li><a href="../CadastroUsers/usuarios.html">Usuários</a></li>
     
-                    <li><a href="../Cadastro Produtos/cadastro_produtos.html">Produtos</a></li>
+                    <li><a href="../CadastroProdutos/cadastro_produtos.html">Produtos</a></li>
                 </ul>
             </li>
-            <li><a href="../Sobre Nos/sobre_nos.html">Sobre Nós</a></li>
-            <li><a href="../Locais de Descarte/locais_descarte.html">Locais de Reciclagem</a></li>
-            <li><a href="../Fale Conosco/fale_conosco.html">Fale Conosco</a></li>
+            <li><a href="../SobreNos/sobre_nos.html">Sobre Nós</a></li>
+            <li><a href="../Locaisde Descarte/locais_descarte.html">Locais de Reciclagem</a></li>
+            <li><a href="../FaleConosco/fale_conosco.html">Fale Conosco</a></li>
             <li><a href="../Parceiros/parceiros.html">Parceiros</a></li>
         </ul>
   
@@ -137,7 +137,7 @@
         -->
   
         <div class="perfil-iconN">
-            <a href="pages/Cadastro de Users/login.html"><img class="image" src="../NavBar/imagens/icone_perfil.png" alt="ícone perfil"></a>
+            <a href="pages/CadastroUsers/login.html"><img class="image" src="../NavBar/imagens/icone_perfil.png" alt="ícone perfil"></a>
         </div>
     </div>
   </nav>
