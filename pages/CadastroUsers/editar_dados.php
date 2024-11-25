@@ -40,7 +40,7 @@ if (!$cliente) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Rodapé/rodape.css">
+    <link rel="stylesheet" href="../Rodape/rodape.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../NavBar/navbar.css"> 
     <style>
@@ -141,18 +141,18 @@ if (!$cliente) {
                 <li class="dropdown">
                     <a href="#">Cadastro</a>
                     <ul class="dropdown-content">
-                        <li><a href="../Cadastro de users/usuarios.html">Usuários</a></li>
+                        <li><a href="../CadastroUsers/usuarios.html">Usuários</a></li>
                     
-                        <li><a href="../Cadastro Produtos/cadastro_produtos.html">Produtos</a></li>
+                        <li><a href="../CadastroProdutos/cadastro_produtos.html">Produtos</a></li>
                     </ul>
                 </li>
-                <li><a href="../Sobre Nos/sobre_nos.html">Sobre Nós</a></li>
-                <li><a href="../Locais de Descarte/locais_descarte.html">Locais de Descarte</a></li>
-                <li><a href="../Fale Conosco/fale_conosco.html">Fale Conosco</a></li>
+                <li><a href="../SobreNos/sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="../LocaisDescarte/locais_descarte.html">Locais de Descarte</a></li>
+                <li><a href="../FaleConosco/fale_conosco.html">Fale Conosco</a></li>
                 <li><a href="../Parceiros/parceiros.html">Parceiros</a></li>
             </ul>
             <div class="perfil-iconN">
-                <a href="pages/Cadastro de Users/login.html"><img class="image" src="../NavBar/imagens/icone_perfil.png" alt="ícone perfil"></a>
+                <a href="pages/CadastroUsers/login.html"><img class="image" src="../NavBar/imagens/icone_perfil.png" alt="ícone perfil"></a>
             </div>
         </div>
     </nav>

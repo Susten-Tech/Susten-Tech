@@ -18,14 +18,14 @@
             <li class="dropdown">
                 <a href=>Cadastro</a>
                 <ul class="dropdown-content">
-                    <li><a href="../Cadastro de users/usuarios.html">Usuários</a></li>
+                    <li><a href="../CadastroUsers/usuarios.html">Usuários</a></li>
                     
-                    <li><a href="../Cadastro Produtos/cadastro_produtos.html">Produtos</a></li>
+                    <li><a href="../CadastroProdutos/cadastro_produtos.html">Produtos</a></li>
                 </ul>
             </li>
-            <li><a href="../Sobre Nos/sobre_nos.html">Sobre Nós</a></li>
-            <li><a href="../Locais de Descarte/locais_descarte.html">Locais de Descarte</a></li>
-            <li><a href="../Fale Conosco/fale_conosco.html">Fale Conosco</a></li>
+            <li><a href="../SobreNos/sobre_nos.html">Sobre Nós</a></li>
+            <li><a href="../LocaisDescarte/locais_descarte.html">Locais de Descarte</a></li>
+            <li><a href="../FaleConosco/fale_conosco.html">Fale Conosco</a></li>
             <li><a href="../Parceiros/parceiros.html">Parceiros</a></li>
         </ul>
 
